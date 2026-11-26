@@ -28,8 +28,6 @@ Uma aplicação de **chat financeiro** que conecta a uma camada MCP para consult
 └──────────────┘             │  get_balance,           │
                              │  get_transactions,      │
                              │  get_expense_patterns   │
-                             └─────────────────────────┘
-```
 
 - **Pluggy** — explica conceitos do Open Finance Brasil (o que é um Item, etc.)
 - **Plaid** — fornece dados reais de contas, saldos e transações (banco de teste/sandbox)
@@ -61,23 +59,6 @@ Uma aplicação de **chat financeiro** que conecta a uma camada MCP para consult
 
 ---
 
-┌──────────────┐     MCP     ┌──────────────────────┐
-│   Lovable    │─────────────│  MCP Server (Pluggy)  │
-│   (Chat UI)  │             │  /mcp (Streamable)    │
-└──────────────┘             └──────────┬───────────┘
-                                         │
-                                         ▼
-┌──────────────┐     MCP     ┌──────────────────────┐
-│   Lovable    │─────────────│  MCP Server (Plaid)   │
-│   (Chat UI)  │             │  get_accounts,        │
-└──────────────┘             │  get_balance,         │
-                             │  get_transactions,    │
-                             │  get_expense_patterns │
-                             └──────────────────────┘
-```
-
-
----
 
 ## 🚀 Como rodar localmente
 
