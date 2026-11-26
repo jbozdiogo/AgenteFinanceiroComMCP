@@ -8,9 +8,13 @@
 
 Uma aplicação de **chat financeiro** que conecta a uma camada MCP para consultar contas, saldos e transações de um banco de teste. O cliente já está no chat: você pergunta "qual é o meu saldo?" e recebe a resposta em minutos, sem sair do app.
 
-### Arquitetura
+- **Pluggy** — explica conceitos do Open Finance Brasil (o que é um Item, etc.)
+- **Plaid** — fornece dados reais de contas, saldos e transações (banco de teste/sandbox)
+- **Chat** — a IA organiza tudo em linguagem simples, com tabelas e dicas
 
-```
+---
+
+## 🏗️ Arquitetura
 ┌──────────────┐     MCP     ┌─────────────────────────┐
 │   Lovable    │─────────────│  MCP Server (Pluggy)    │
 │   (Chat UI)  │             │  /mcp (Streamable HTTP) │
@@ -57,9 +61,6 @@ Uma aplicação de **chat financeiro** que conecta a uma camada MCP para consult
 
 ---
 
-## 🏗️ Arquitetura
-
-```
 ┌──────────────┐     MCP     ┌──────────────────────┐
 │   Lovable    │─────────────│  MCP Server (Pluggy)  │
 │   (Chat UI)  │             │  /mcp (Streamable)    │
@@ -75,13 +76,6 @@ Uma aplicação de **chat financeiro** que conecta a uma camada MCP para consult
                              └──────────────────────┘
 ```
 
-## 🏁 Estado do projeto (entrega)
-
-| Item | Status | Link |
-|---|---|---|
-| **2. Lovable** | ✅ Publicado | https://papo-do-meu-dinheiro.lovable.app |
-| **3. Plaid** | ✅ Configurado | Client ID + Secret de Sandbox |
-| **4. Publicação** | ✅ Repositório atualizado | https://github.com/jbozdiogo/AgenteFinanceiroComMCP |
 
 ---
 
