@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Assistente Financeiro — Banco de Teste</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- ===== Cabeçalho ===== -->
+  <header class="header">
+    <div class="container">
+      <div class="header__logo">
+        <span class="logo-icon">💰</span>
+        <div>
+          <h1>Assistente Financeiro</h1>
+          <p class="subtitle">Banco de teste — dados fictícios</p>
+        </div>
+      </div>
+      <span class="badge">Dados fictícios</span>
+    </div>
+  </header>
+
+  <!-- ===== Conteúdo principal ===== -->
+  <main class="main">
+    <div class="container">
+      <div class="chat__container" id="chatContainer">
+        <!-- Mensagem de boas-vindas -->
+        <div class="message message--welcome">
+          <div class="message__avatar">👋</div>
+          <div class="message__content">
+            <p>Olá! Sou seu assistente financeiro.</p>
+            <p class="muted">Posso ajudar com: saldo de contas, transações, gastos porcategoria e padrões de despesa.</p>
+            <div class="suggestions">
+              <button class="suggestion" data-question="Qual é o meu saldo?">Qual é o meu saldo?</button>
+              <button class="suggestion" data-question="Me mostra as transações do cartão">Transações do cartão</button>
+              <button class="suggestion" data-question="Qual é o meu gasto por categoria?">Gasto por categoria</button>
+              <button class="suggestion" data-question="Qual é o saldo do cartão?">Saldo do cartão</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Indicador de conexão -->
+        <div class="connection-status" id="connectionStatus">
+          <span class="dot"></span>
+          <span class="status-text">Pronto para responder — conectando ao MCP server…</span>
+        </div>
+      </div>
+
+      <!-- ===== Campo de entrada ===== -->
+      <div class="input__container">
+        <form id="chatForm" class="input__form">
+          <div class="input__group">
+            <input
+              id="chatInput"
+              class="input__field"
+              type="text"
+              placeholder="Pergunte sobre saldo, transações ou gastos…"
+              autocomplete="off"
+              autofocus
+            />
+            <button class="input__send" type="submit">➤</button>
+          </div>
+        </form>
+        <p class="hint">O assistente responde com dados fictícios do banco de teste.</p>
+      </div>
+    </div>
+  </main>
+
+  <!-- ===== Rodapé ===== -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer__text">
+        Assistente criado para estudo do bootcamp. <br />
+        Dados são fictícios — não representam sua conta real.
+      </p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+{
+  "name": "dmo-assistente-bancario",
+  "version": "1.0.0",
+  "description": "Assistente financeiro com MCP (Model Context Protocol): connecta a Pluggy e a Plaid sandbox para responder perguntas sobre contas, saldos e transações em português.",
+  "main": "server.js",
+  "scripts": {
+    "mock:mcp": "node mcp-servers/pluggy-mock/server.js",
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "license": "UNLICENSED",
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

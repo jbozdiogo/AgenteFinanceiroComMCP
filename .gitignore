@@ -1,0 +1,30 @@
+# Dependencies
+node_modules/
+
+# Logs
+server.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Env
+.env
+.env.local
+
+# Build
+dist/
+build/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# MCP config (secrets)
+mcp-servers/pluggy-mock/.env
+mcp-servers/pluggy-mock/.env.local

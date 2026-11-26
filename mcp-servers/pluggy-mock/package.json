@@ -1,0 +1,10 @@
+{
+  "name": "pluggy-mcp-mock",
+  "version": "1.0.0",
+  "description": "Simulador do servidor MCP do Pluggy (Streamable HTTP) para o desafio do bootcamp. Substitui o endpoint https://mcp.pluggy.ai/mcp com dados mockados.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "license": "UNLICENSED"
+}

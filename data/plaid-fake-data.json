@@ -1,0 +1,270 @@
+{
+  "meta": {
+    "environment": "sandbox",
+    "note": "Dados fictícios do sandbox da Plaid. NÃO utilize em produção. Em produção, exige-se consentimento do usuário e segurança (Open Finance Brasil).",
+    "currency": "BRL",
+    "mock_date": "2024-01-15"
+  },
+  "accounts": [
+    {
+      "id": "acct_checking_001",
+      "name": "Conta Corrente Café da Manhã",
+      "type": "depository",
+      "subtype": "checking",
+      "currency": "BRL",
+      "balance": 2450.00,
+      "available_balance": 2380.50,
+      "unofficial_currency_code": "BRL",
+      "is_hidden": false,
+      "mask": "1234",
+      "nickname": "Café da Manhã"
+    },
+    {
+      "id": "acct_credit_002",
+      "name": "Cartão de Crédito Supercards",
+      "type": "credit",
+      "subtype": "credit_card",
+      "currency": "BRL",
+      "balance": -1234.56,
+      "available_balance": -1234.56,
+      "unofficial_currency_code": "BRL",
+      "is_hidden": false,
+      "mask": "5678",
+      "nickname": "Supercards"
+    },
+    {
+      "id": "acct_savings_003",
+      "name": "Conta Poupança Ideal",
+      "type": "depository",
+      "subtype": "savings",
+      "currency": "BRL",
+      "balance": 5600.00,
+      "available_balance": 5600.00,
+      "unofficial_currency_code": "BRL",
+      "is_hidden": false,
+      "mask": "9012",
+      "nickname": "Ideal"
+    },
+    {
+      "id": "acct_investment_004",
+      "name": "Carteira Investimento Futuro",
+      "type": "investment",
+      "subtype": "securities",
+      "currency": "BRL",
+      "balance": 8900.00,
+      "available_balance": 8900.00,
+      "unofficial_currency_code": "BRL",
+      "is_hidden": false,
+      "mask": "3456",
+      "nickname": "Futuro"
+    }
+  ],
+  "transactions": [
+    {
+      "id": "tx_001",
+      "account_id": "acct_checking_001",
+      "amount": -42.50,
+      "name": "Café da Manhã - Shopping",
+      "date": "2024-01-14",
+      "category": ["Dining", "Alimentação"],
+      "merchant_name": "Café da Manhã",
+      "merchant_city": "São Paulo"
+    },
+    {
+      "id": "tx_002",
+      "account_id": "acct_checking_001",
+      "amount": -320.00,
+      "name": "Supermercado Pão de Açúcar",
+      "date": "2024-01-13",
+      "category": ["Groceries", "Supermercado"],
+      "merchant_name": "Pão de Açúcar",
+      "merchant_city": "São Paulo"
+    },
+    {
+      "id": "tx_003",
+      "account_id": "acct_checking_001",
+      "amount": -150.00,
+      "name": "Papelaria OfficeMax",
+      "date": "2024-01-12",
+      "category": ["Shopping", "Office Supplies"],
+      "merchant_name": "OfficeMax",
+      "merchant_city": "São Paulo"
+    },
+    {
+      "id": "tx_004",
+      "account_id": "acct_checking_001",
+      "amount": -89.90,
+      "name": "Internet Vivo",
+      "date": "2024-01-11",
+      "category": ["Utilities", "Internet"],
+      "merchant_name": "Vivo",
+      "merchant_city": "São Paulo"
+    },
+    {
+      "id": "tx_005",
+      "account_id": "acct_checking_001",
+      "amount": -2500.00,
+      "name": "Salário - Conta Corrente",
+      "date": "2024-01-01",
+      "category": ["Salary", "Income"],
+      "merchant_name": "Empresa XYZ Ltda",
+      "merchant_city": "São Paulo"
+    },
+    {
+      "id": "tx_006",
+      "account_id": "acct_credit_002",
+      "amount": -1234.56,
+      "name": "Saldo devedor do Cartão",
+      "date": "2024-01-15",
+      "category": ["Credit Card", "Debt"],
+      "merchant_name": "Cartão Supercards",
+      "merchant_city": "São Paulo"
+    },
+    {
+      "id": "tx_007",
+      "account_id": "acct_credit_002",
+      "amount": -250.00,
+      "name": "Gasolina - Shell",
+      "date": "2024-01-14",
+      "category": ["Transportation", "Fuel"],
+      "merchant_name": "Shell",
+      "merchant_city": "São Paulo"
+    },
+    {
+      "id": "tx_008",
+      "account_id": "acct_credit_002",
+      "amount": -180.00,
+      "name": "Cinema Odeon - Imeza",
+      "date": "2024-01-13",
+      "category": ["Entertainment", "Cinema"],
+      "merchant_name": "Odeon",
+      "merchant_city": "São Paulo"
+    },
+    {
+      "id": "tx_009",
+      "account_id": "acct_credit_002",
+      "amount": -320.00,
+      "name": "Compras online Amazon",
+      "date": "2024-01-12",
+      "category": ["Shopping", "E-commerce"],
+      "merchant_name": "Amazon",
+      "merchant_city": "São Paulo"
+    },
+    {
+      "id": "tx_010",
+      "account_id": "acct_credit_002",
+      "amount": -120.00,
+      "name": "Restaurante Pizza Planeta",
+      "date": "2024-01-11",
+      "category": ["Dining", "Comida"],
+      "merchant_name": "Pizza Planeta",
+      "merchant_city": "São Paulo"
+    },
+    {
+      "id": "tx_011",
+      "account_id": "acct_savings_003",
+      "amount": -1000.00,
+      "name": "Deposito Mensal",
+      "date": "2024-01-01",
+      "category": ["Savings", "Transfer"],
+      "merchant_name": "Ideal Bank",
+      "merchant_city": "São Paulo"
+    },
+    {
+      "id": "tx_012",
+      "account_id": "acct_investment_004",
+      "amount": -5000.00,
+      "name": "Compra ações - Petrobrás",
+      "date": "2024-01-10",
+      "category": ["Investing", "Stocks"],
+      "merchant_name": "Investing App",
+      "merchant_city": "São Paulo"
+    },
+    {
+      "id": "tx_013",
+      "account_id": "acct_investment_004",
+      "amount": -200.00,
+      "name": "Dividendos - SCOR",
+      "date": "2024-01-05",
+      "category": ["Investing", "Dividends"],
+      "merchant_name": "Investing App",
+      "merchant_city": "São Paulo"
+    },
+    {
+      "id": "tx_014",
+      "account_id": "acct_checking_001",
+      "amount": -65.00,
+      "name": "FreioUrban - Apps",
+      "date": "2024-01-15",
+      "category": ["Transportation", "Ride"],
+      "merchant_name": "FreioUrban",
+      "merchant_city": "São Paulo"
+    },
+    {
+      "id": "tx_015",
+      "account_id": "acct_checking_001",
+      "amount": -20.00,
+      "name": "Chuva - Lojas Bimbo",
+      "date": "2024-01-14",
+      "category": ["Shopping", "Clothing"],
+      "merchant_name": "Lojas Bimbo",
+      "merchant_city": "São Paulo"
+    }
+  ],
+  "expense_patterns": {
+    "title": "Padrões de gasto",
+    "description": "Análise de gastos por categoria durante o período analisado (janeiro/2024)",
+    "summary": {
+      "total_spent": 4132.36,
+      "avg_daily": 137.75,
+      "categories": {
+        "Alimentação/Dinheiro": 432.40,
+        "Shopping/E-commerce": 500.00,
+        "Transporte": 435.00,
+        "Lazer/Entretenimento": 180.00,
+        "Serviços/Outros": 2432.36
+      }
+    },
+    "table_3_patterns": [
+      {
+        "pattern": "Café da Manhã / Alimentação",
+        "monthly_range": "R$ 400 – R$ 500",
+        "monthly_avg": 432.40,
+        "percentage": 10.5,
+        "advice": "Mantenha sempre abaixo de R$ 500. Reduza refeições rápidas em 20% para economizar R$ 100/mês."
+      },
+      {
+        "pattern": "Shopping / E-commerce",
+        "monthly_range": "R$ 450 – R$ 550",
+        "monthly_avg": 500.00,
+        "percentage": 12.1,
+        "advice": "Cuidado com o shopping online. Defina um orçamento mensal e espere 24h antes de comprar."
+      },
+      {
+        "pattern": "Transporte / Transporte",
+        "monthly_range": "R$ 400 – R$ 500",
+        "monthly_avg": 435.00,
+        "percentage": 10.5,
+        "advice": "Gasolina e aplicativos de transporte. Considere transferir para transporte coletivo nos meses de alta."
+      }
+    ]
+  },
+  "pluggy_info": {
+    "api_docs": "https://docs.pluggy.ai",
+    "what_is_item": "No contexto do Pluggy e de Open Finance Brasil, um 'Item' representa uma conta ou ativo financeiro vinculado a um cliente. Cada Item é único e identifica uma conta específica (conta corrente, cartão de crédito, poupança, etc.) dentro de um determinado instituto financeiro.",
+    "item_fields": [
+      "item_id: ID único do item",
+      "name: Nome da conta/carteira",
+      "type: Tipo de conta (depository, credit, investment, loan)",
+      "subtype: Subtipo da conta",
+      "balance: Saldo atual",
+      "currency: Moeda (BRL, USD, etc.)",
+      "mask: Últimos dígitos da conta",
+      "nickname: Apelido dado pelo usuário"
+    ],
+    "sources": [
+      "https://docs.pluggy.ai - Documentação oficial do Pluggy",
+      "https://openfinancebr.org - Especificações Open Finance Brasil"
+    ]
+  }
+}
