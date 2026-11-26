@@ -1,0 +1,13 @@
+{
+  "name": "plaid-mcp-server",
+  "version": "1.0.0",
+  "description": "Servidor MCP do Plaid (Sandbox) — fornece contas, saldos e transações para o Assistente Financeiro. Configuração STDIO com variáveis de ambiente.",
+  "main": "plaid-server.js",
+  "scripts": {
+    "start": "node plaid-server.js"
+  },
+  "license": "UNLICENSED",
+  "dependencies": {
+    "plaid": "^24.0.0"
+  }
+}

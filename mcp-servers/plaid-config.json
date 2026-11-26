@@ -1,0 +1,21 @@
+{
+  "name": "agente-financeiro-mcp",
+  "description": "Assistente Financeiro com MCP — Pluggy (explicação) + Plaid (dados reais)",
+  "version": "1.0.0",
+  "mcpServers": {
+    "plaid": {
+      "type": "stdio",
+      "command": "node",
+      "args": ["C:/Users/diogoferreira/Documents/GitHub/AgenteFinanceiroComMCP/mcp-servers/plaid/plaid-server.js"],
+      "env": {
+        "PLAID_CLIENT_ID": "6b0889bffab2a5000eccef38",
+        "PLAID_SECRET": "59a6daab0493448debccae80515378"
+      }
+    },
+    "pluggy": {
+      "type": "streamableHttp",
+      "url": "https://mcp.pluggy.ai/mcp",
+      "description": "Integração brasileira: explica conceitos do Open Finance Brasil (Pluggy)"
+    }
+  }
+}
